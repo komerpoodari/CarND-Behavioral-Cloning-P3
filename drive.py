@@ -44,7 +44,7 @@ class SimplePIController:
 
 
 controller = SimplePIController(0.1, 0.002)
-set_speed = 6 #9
+set_speed = 6 # my laptop was not able cope with higher speed to record the data9
 
 controller.set_desired(set_speed)
 
