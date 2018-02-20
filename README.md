@@ -1,5 +1,9 @@
 # Behaviorial Cloning Project
 
+This is an assignment submisson.
+
+The **writeup-report.md** details the solution.
+
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
 Overview
