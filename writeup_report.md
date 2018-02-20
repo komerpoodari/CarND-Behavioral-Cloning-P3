@@ -149,3 +149,4 @@ The following is the video link of the autonomous run (https://www.youtube.com/w
 The following are my takeaways.
 1. It's a good exercise, training was a bit time consuming and quite a few parameters / aspects to tune and select.
 2. The speed element is missing in the exercise, whereas in the realworld, speed is an input on how steering wheel need to be turned.
+3. The angle correction had to be fine-tuned with experimentation, along with set speeds in drive.py.
