@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 [image4]: ./examples/recover_to_right.jpg "Recovery Image"
 [image5]: ./examples/normal.jpg "Normal Image"
 [image6]: ./examples/flipped.jpg "Flipped Image"
-[image7]: https://www.youtube.com/watch?v=8DjwK2Dzh5o
+
 
 ## Rubric Points
 ### Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/432/view) individually and describe how I addressed each point in my implementation.  
@@ -144,7 +144,7 @@ I finally randomly shuffled the data set and put 20% of the data into a validati
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 7 as evidenced by multiple runs. I used an adam optimizer. I did not specifically tune learning rate.
 
 The following is the video link of the autonomous run (https://www.youtube.com/watch?v=8DjwK2Dzh5o)
-![alt text][image7]
+
 
 The following are my takeaways.
 1. It's a good exercise, training was a bit time consuming and quite a few parameters / aspects to tune and select.
