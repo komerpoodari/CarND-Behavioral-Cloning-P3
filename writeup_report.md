@@ -118,19 +118,22 @@ To capture good driving behavior, I first recorded two laps on track one using c
 I then recorded the vehicle recovering from the right side of the road back to center so that the vehicle would learn to bring the vehicle back to the center. Here is an example.
 ![alt text][image3]
 
-Similary an example of recovering from left to the center.
+
+
+
+Similarly an example of recovering from left to the center.
 ![alt text][image4]
 
 
 Then I repeated this process on track two in order to get more data points.  It was a bit difficult to collect the data this way.
 
-To augment the data sat, I also flipped images and angles thinking that this would avoid left side bias induction, because the nature of the track. For example, here is an image and the flipped versin:
+To augment the data sat, I also flipped images and angles thinking that this would avoid left side bias induction, because the nature of the track. For example, here is an image and the flipped version:
 
 ![alt text][image5]
 ![alt text][image6]
 
 
-After the collection process, I had 20,000 to 25,000 number of data points, for each session. I then preprocessed this data by in Keras model by cropping to avoid the irrelevant data feed at the top (60 rows, containing tries and horizon) and at the bottom (20 rows, containing steering wheel or hood).  
+After the collection process, I had 20,000 to 25,000 number of data points, for each training session. I then preprocessed this data by in Keras model by cropping to avoid the irrelevant data feed at the top (60 rows, containing tries and horizon) and at the bottom (20 rows, containing steering wheel or hood).  
 
 Then I normalized the image pixel data with mean 0 and range -0.5 to 0.5, using lambda primitive.
 
@@ -138,3 +141,8 @@ Then I normalized the image pixel data with mean 0 and range -0.5 to 0.5, using 
 I finally randomly shuffled the data set and put 20% of the data into a validation set, as part of model.fit (in model.ipynb, section **18. Compile, Train and Save the model**). 
 
 I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 7 as evidenced by multiple runs. I used an adam optimizer. I did not specifically tune learning rate.
+
+
+The following are my takeaways.
+1. It's a good exercise, training was a bit time consuming and quite a few parameters / aspects to tune and select.
+2. The speed element is missing in the exercise, whereas in the realworld, speed is an input on how steering wheel need to be turned.
